@@ -1,0 +1,25 @@
+<div class="_carousel_with_button">
+    <section class="carousel-box">
+        <div class="carousel">
+            {% for slide in carousels %}
+                <input name="carousel-slide" id="carousels-slide-{{ slide["id"] }}" type="radio" {% if slide["checked"] == true %}checked{% endif %} hidden>
+                <div class="slide">
+                    <label class="carousels-slide-button carousels-slide-button-next" for="carousels-slide-{{ slide["next"] }}"> > </label>
+                    <label class="carousels-slide-button carousels-slide-button-past" for="carousels-slide-{{ slide["past"] }}"> < </label>
+                    <div>
+                        <img src="{{ slide["src"] }}" alt="{{ slide["alt"] }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="carousel-image-bouts">
+            {% for slide in carousels %}
+                <div class="bouts-image">
+                    <label for="carousels-slide-{{ slide["id"] }}">
+                        <img src="{{ slide["src"] }}" alt="{{ slide["alt"] }}">
+                    </label>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>

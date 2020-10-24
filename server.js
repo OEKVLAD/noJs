@@ -1,34 +1,130 @@
-// server.js
-// where your node app starts
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 
-// we've started you off with Express (https://expressjs.com/)
-// but feel free to use whatever libraries or frameworks you'd like through `package.json`.
-const express = require("express");
-const app = express();
+const {TwingEnvironment, TwingLoaderFilesystem} = require('twing');
+import pkg from 'express';
+import {dataBaseService} from "./dataBase.service.js";
+import {router} from "./router.js";
+const fs = require('fs');
+const app = new pkg();
+const path = require("path");
+// const app = require('express');
+const port = process.env.NODE_PORT || 3001;
 
-// our default array of dreams
-const dreams = [
-  "Find and count some sheep",
-  "Climb a really tall mountain",
-  "Wash the dishes"
-];
 
-// make all the files in 'public' available
-// https://expressjs.com/en/starter/static-files.html
-app.use(express.static("public"));
+const db = new dataBaseService();
 
-// https://expressjs.com/en/starter/basic-routing.html
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + "/views/index.html");
+const templatePath = './templates';
+
+app.get('/scripts/:file', function (req, res) {
+  res.set('Content-Type', 'text/javascript');
+  res.set('Cache-control', `public, max-age=1`);
+
+  let options = {
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true
+    }
+  }
+
+  res.sendFile(path.resolve("static/", req.params.file), options, function (err) {
+    if (err) {
+      res.redirect("/404")
+    }
+  })
 });
 
-// send the default array of dreams to the webpage
-app.get("/dreams", (request, response) => {
-  // express helps us take JS objects and send them as JSON
-  response.json(dreams);
+app.get('/style/:file', function (req, res) {
+
+  res.set('Content-Type', 'text/stylesheet');
+  res.set('Cache-control', `public, max-age=1`);
+
+  let options = {
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true
+    }
+  }
+
+  console.log(path.resolve("static/", req.params.file));
+
+  res.sendFile(path.resolve("static/", req.params.file), options, function (err) {
+    if (err) {
+      console.log(err);
+      // res.redirect("/404")
+    }
+  })
+
 });
 
-// listen for requests :)
-const listener = app.listen(process.env.PORT, () => {
-  console.log("Your app is listening on port " + listener.address().port);
+app.get('/image/:file', function (req, res) {
+  res.set('Content-Type', 'image');
+  res.set('Cache-control', `public, max-age=1`);
+
+  let options = {
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true
+    }
+  }
+
+  res.sendFile(path.resolve("static/", req.params.file), options, function (err) {
+    if (err) {
+      res.redirect("/404")
+    }
+  })
+
+});
+
+app.get('/favicon', function (req, res) {
+  res.set('Content-Type', 'image');
+  res.set('Cache-control', `public, max-age=1`);
+
+  let options = {
+    dotfiles: 'deny',
+    headers: {
+      'x-timestamp': Date.now(),
+      'x-sent': true
+    }
+  }
+
+  res.sendFile(path.resolve("favicon.ico"), options, function (err) {
+    if (err) {
+      res.redirect("/404")
+    }
+  })
+
+});
+
+app.get('/', function (req, res) {
+  const _router = new router();
+
+  _router.controller("/", req.params)
+
+  let loader = new TwingLoaderFilesystem(templatePath);
+  let twig = new TwingEnvironment(loader);
+
+  twig.render(_router.getViewsPath, _router.getData).then((output) => {
+    res.end( output);
+  });
+});
+
+app.get('/:controller', function (req, res) {
+  const _router = new router();
+
+  _router.controller(req.params.controller, req.params)
+
+  let loader = new TwingLoaderFilesystem(templatePath);
+  let twig = new TwingEnvironment(loader);
+
+  twig.render(_router.getViewsPath, _router.getData).then((output) => {
+    res.end( output);
+  });
+});
+
+app.listen(port, () => {
+  console.log('Node.js Express server listening on port '+port);
 });

@@ -1,0 +1,24 @@
+{
+  "bundle.css": "bundle.css?5e65a3fb27f1e43738e0",
+  "bundle.js": "bundle.js?e656b8dc53f6dd981cb5",
+  "carousel.css": "carousel.css?4bde0404c4ab76284f85",
+  "carousel.js": "carousel.js?9924c19d0a7004313bc3",
+  "entrypoints": {
+    "bundle": {
+      "css": [
+        "bundle.css?5e65a3fb27f1e43738e0"
+      ],
+      "js": [
+        "bundle.js?e656b8dc53f6dd981cb5"
+      ]
+    },
+    "carousel": {
+      "css": [
+        "carousel.css?4bde0404c4ab76284f85"
+      ],
+      "js": [
+        "carousel.js?9924c19d0a7004313bc3"
+      ]
+    }
+  }
+}

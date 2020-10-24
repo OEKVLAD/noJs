@@ -1,4 +1,4 @@
-// client-side js, loaded by index.html
+// client-side js, loaded by index.twig
 // run by the browser each time the page is loaded
 
 console.log("hello world :o");

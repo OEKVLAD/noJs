@@ -1,0 +1,37 @@
+{% extends "./layout.twig" %}
+
+{% block content %}
+
+
+  <h1 class="cover-heading text-white">Carousels</h1>
+
+
+  <h2 class="text-white">carousel with button</h2>
+
+  {% include "./carousel/_carousel_with_button.twig" with {"carousels": data } only  %}
+
+  <div class="description">
+
+  <h2>
+    Code example "twig"
+  </h2>
+
+  <pre class="text-left"><samp>{{ source('./carousel/_carousel_with_button.twig')|escape }}</samp></pre>
+
+    <h2>
+      Code example "scss"
+    </h2>
+
+    <pre class="text-left"><samp>{{ source('./carousel/_carousel_with_button.scss')|escape }}</samp></pre>
+
+  </div>
+
+
+{% endblock %}
+
+{% block style %}
+  {% include "./_shared/connectStyleSheet.twig" with {"files": entry.entrypoints.carousel.css } only %}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
