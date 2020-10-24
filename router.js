@@ -1,7 +1,5 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
 import {service} from "./servise/service.js";
-
+import fs from 'fs';
 const se = new service();
 
 export class router {
@@ -9,10 +7,18 @@ export class router {
     constructor() {
         this.data = null;
         this.viewsPath = null;
+        this.entryData = null;
+    }
+
+    get entry() {
+        const data = fs.readFileSync('./entery.json', 'utf8')
+        this.entryData = JSON.parse(data);
     }
 
     controller(paramsController, params) {
         let controller = null;
+        this.entry;
+
         switch (paramsController) {
             case "/":
                 controller = se.homeController;
@@ -42,15 +48,12 @@ export class router {
         return this.viewsPath;
     }
 
-    get getData () {
-        let entry = require('./entery.json')
-
+   get getData () {
         return  Object.assign(
             {
-                "entry" : entry,
+                "entry" : this.entryData,
                 "data" :  this.data
             }
         );
-    }
-
+   }
 }

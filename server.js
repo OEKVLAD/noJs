@@ -1,18 +1,11 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-
-const {TwingEnvironment, TwingLoaderFilesystem} = require('twing');
+import {TwingEnvironment, TwingLoaderFilesystem} from 'twing';
 import pkg from 'express';
 import {dataBaseService} from "./dataBase.service.js";
 import {router} from "./router.js";
-const fs = require('fs');
+import path from "path";
+
 const app = new pkg();
-const path = require("path");
-// const app = require('express');
 const port = process.env.NODE_PORT || 3001;
-
-
-const db = new dataBaseService();
 
 const templatePath = './templates';
 
