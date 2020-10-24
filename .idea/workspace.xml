@@ -10,42 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92b9ad31-dbf9-451f-8c16-a2ad283cc528" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/builder/configuration/example.conf.v_0.0.1/webpack.config-1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataBase.service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/carousel/carousel.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/carousel/carousel.entity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/carousel/carousel.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/error/error.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/error/error.entity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/error/error.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/home/home.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/home/home.entity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/home/home.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/service.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/slider/slider.controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/slider/slider.entity.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servise/slider/slider.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/404.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/_shared/connectStyleSheet.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/carousel/_carousel_with_button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/carousel/_carousel_with_button.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/carousel/carousel.index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/carousel/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/carousel/index.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/layout.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/slider/index.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="92b9ad31-dbf9-451f-8c16-a2ad283cc528" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,7 +90,7 @@
       <workItem from="1603478730763" duration="1088000" />
       <workItem from="1603479835839" duration="384000" />
       <workItem from="1603480359971" duration="15499000" />
-      <workItem from="1603545139060" duration="18160000" />
+      <workItem from="1603545139060" duration="18598000" />
     </task>
     <servers />
   </component>
@@ -157,22 +122,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603481126184" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1603572384881">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1603572849628">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572384881" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1603572384881">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572849628" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1603572849628">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572384881" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1603572384881">
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572849628" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1603572849628">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572384881" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1603572384881">
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572849628" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1603572849628">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572384881" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603572849628" />
     <state width="1899" height="352" key="GridCell.Tab.1.bottom" timestamp="1603483389471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
