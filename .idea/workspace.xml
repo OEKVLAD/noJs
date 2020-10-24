@@ -12,8 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="92b9ad31-dbf9-451f-8c16-a2ad283cc528" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +52,10 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
-    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
+        <browser start="true" with-js-debugger="true" url="http://localhost:3001" />
+      </EXTENSION>
       <method v="2" />
     </configuration>
     <configuration name="example:build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -77,6 +78,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.example:build" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
@@ -96,7 +102,7 @@
       <workItem from="1603478730763" duration="1088000" />
       <workItem from="1603479835839" duration="384000" />
       <workItem from="1603480359971" duration="15499000" />
-      <workItem from="1603545139060" duration="20403000" />
+      <workItem from="1603545139060" duration="21693000" />
     </task>
     <servers />
   </component>
@@ -116,10 +122,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603390525456">
+    <state x="414" y="180" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603575752383">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="414" y="180" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603390525456" />
+    <state x="414" y="180" width="1092" height="738" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603575752383" />
     <state x="490" y="180" key="DBNavigator.ProjectSettingsDialog" timestamp="1603481225579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -128,22 +134,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603481126184" />
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1603574645901">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom" timestamp="1603574693322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574645901" />
-    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1603574645901">
+    <state width="1899" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574693322" />
+    <state width="1899" height="285" key="GridCell.Tab.0.center" timestamp="1603574693322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574645901" />
-    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1603574645901">
+    <state width="1899" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574693322" />
+    <state width="1899" height="285" key="GridCell.Tab.0.left" timestamp="1603574693322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574645901" />
-    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1603574645901">
+    <state width="1899" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574693322" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right" timestamp="1603574693322">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574645901" />
+    <state width="1899" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574693322" />
     <state width="1899" height="352" key="GridCell.Tab.1.bottom" timestamp="1603483389471">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -196,6 +202,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="170" key="SettingsEditor/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603484927541" />
+    <state x="667" y="124" width="585" height="801" key="find.popup" timestamp="1603574741218">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="667" y="124" width="585" height="801" key="find.popup/0.0.1920.1050/1920.-131.1600.1170@0.0.1920.1050" timestamp="1603574741218" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1603567734094">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -5,7 +5,7 @@ import {router} from "./router.js";
 import path from "path";
 
 const app = new pkg();
-const port = process.env.NODE_PORT || 3001;
+const port = process.env.PORT || 3001;
 
 const templatePath = './templates';
 
