@@ -1,0 +1,26 @@
+{% extends "./layout.twig" %}
+
+{% block content %}
+
+    <h1 class="cover-heading text-white pt-5 pb-5">Features</h1>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Board task</h1>
+        <p class="lead">you can go to my task board and add the desired features or report a bug.</p>
+        <hr class="my-4">
+        <h3 class=" pt-5 pb-5">Feature board</h3>
+        <iframe width="1000px" height="600px" style='border-style:none;border-radius:4px; box-shadow: 0 6px 12px rgba(10, 67, 141, 0.20); border:1pt solid #eee' src='https://ora.pm/project/266795/kanban'></iframe>
+
+        <h3 class=" pt-5 pb-5">Bugs board</h3>
+        <iframe width="1000px" height="600px" style='border-style:none;border-radius:4px; box-shadow: 0 6px 12px rgba(10, 67, 141, 0.20); border:1pt solid #eee' src='https://ora.pm/project/266794/kanban'></iframe>
+    </div>
+
+
+{% endblock %}
+
+{% block style %}
+    {% include "./_shared/connectStyleSheet.twig" with {"files": entry.entrypoints.features.css } only %}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

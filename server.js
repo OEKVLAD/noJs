@@ -40,13 +40,9 @@ app.get('/style/:file', function (req, res) {
       'x-sent': true
     }
   }
-
-  console.log(path.resolve("static/", req.params.file));
-
   res.sendFile(path.resolve("static/", req.params.file), options, function (err) {
     if (err) {
-      console.log(err);
-      // res.redirect("/404")
+      res.redirect("/404")
     }
   })
 

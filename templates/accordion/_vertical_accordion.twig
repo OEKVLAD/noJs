@@ -1,0 +1,15 @@
+<div class="_vertical_accordion">
+    <section class="accordion">
+        {% for tab in accordion %}
+            <label class="accordion_tittle" for="accordion_vertical-{{ tab["id"] }}">
+                <span>
+                    {{ tab["tittle"]|raw }}
+                </span>
+            </label>
+            <input name="accordion_vertical" id="accordion_vertical-{{ tab["id"] }}" type="radio" {% if tab["checked"] == true %}checked{% endif %} hidden>
+            <div class="accordion_content">
+                {{ tab["content"]|raw }}
+            </div>
+        {% endfor %}
+    </section>
+</div>

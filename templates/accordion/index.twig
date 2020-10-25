@@ -1,0 +1,55 @@
+{% extends "./layout.twig" %}
+
+{% block content %}
+
+    <h1 class="cover-heading text-white">Carousels</h1>
+
+    <div class="description">
+
+        <h2>Accordion</h2>
+
+        <span>
+            <p>Toggle the visibility of content across your project with a few inputs.</p>
+        </span>
+
+        <h3 class="pt-3">
+            Sass variables
+        </h3>
+
+        <pre class="text-left"><samp>{{ source('./accordion/_variable.scss')|escape }}</samp></pre>
+
+    </div>
+
+    <h2 class="text-white">Accordion vertical style</h2>
+
+    {% include "./accordion/_vertical_accordion.twig" with {"accordion": data } only  %}
+
+    <div class="description">
+
+        <h3 class="pt-3 pb-3">
+            Accordion vertical
+        </h3>
+
+        <h4>
+            Code example "twig"
+        </h4>
+
+        <pre class="text-left"><samp>{{ source('./accordion/_vertical_accordion.twig')|escape }}</samp></pre>
+
+        <h4>
+            Code example "scss"
+        </h4>
+
+        <pre class="text-left"><samp>{{ source('./accordion/_vertical_accordion.scss')|escape }}</samp></pre>
+
+    </div>
+
+
+{% endblock %}
+
+{% block style %}
+    {% include "./_shared/connectStyleSheet.twig" with {"files": entry.entrypoints.accordion.css } only %}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

@@ -5,22 +5,45 @@
 
   <h1 class="cover-heading text-white">Carousels</h1>
 
+  <div class="description">
 
-  <h2 class="text-white">carousel with button</h2>
+    <h2>Carousel</h2>
+
+    <span>
+      <p>A carousel is a slideshow for looping through a series of content created using CSS transforms. It works with a series of images, text, or custom markup. It also includes support for previous / next controls and indicators.</p>
+    </span>
+
+    <span>
+      <p>Carousels do not automatically normalize slide sizes. Thus, you may need to adjust the height.</p>
+    </span>
+
+    <h3 class="pt-3">
+      Sass variables
+    </h3>
+
+    <pre class="text-left"><samp>{{ source('./carousel/_variable.scss')|escape }}</samp></pre>
+
+  </div>
+
+  <h2 class="text-white">Carousel with button and miniature</h2>
 
   {% include "./carousel/_carousel_with_button.twig" with {"carousels": data } only  %}
 
   <div class="description">
 
-  <h2>
+  <h3 class="pt-3 pb-3">
+    Carousel with button and miniature
+  </h3>
+
+  <h4>
     Code example "twig"
-  </h2>
+  </h4>
 
   <pre class="text-left"><samp>{{ source('./carousel/_carousel_with_button.twig')|escape }}</samp></pre>
 
-    <h2>
+    <h4>
       Code example "scss"
-    </h2>
+    </h4>
 
     <pre class="text-left"><samp>{{ source('./carousel/_carousel_with_button.scss')|escape }}</samp></pre>
 

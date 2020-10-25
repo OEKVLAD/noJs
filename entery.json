@@ -1,24 +1,44 @@
 {
+  "accordion.css": "accordion.css?78116edb1ba09c458bfe",
+  "accordion.js": "accordion.js?d8f735f6f01ea5ebb2aa",
   "bundle.css": "bundle.css?5e65a3fb27f1e43738e0",
-  "bundle.js": "bundle.js?e656b8dc53f6dd981cb5",
-  "carousel.css": "carousel.css?4bde0404c4ab76284f85",
-  "carousel.js": "carousel.js?9924c19d0a7004313bc3",
+  "bundle.js": "bundle.js?9888982cf8f518c12716",
+  "carousel.css": "carousel.css?3698ddbb0ef1ba3c80c0",
+  "carousel.js": "carousel.js?d047648c44df9c7101dc",
   "entrypoints": {
     "bundle": {
       "css": [
         "bundle.css?5e65a3fb27f1e43738e0"
       ],
       "js": [
-        "bundle.js?e656b8dc53f6dd981cb5"
+        "bundle.js?9888982cf8f518c12716"
+      ]
+    },
+    "accordion": {
+      "css": [
+        "accordion.css?78116edb1ba09c458bfe"
+      ],
+      "js": [
+        "accordion.js?d8f735f6f01ea5ebb2aa"
       ]
     },
     "carousel": {
       "css": [
-        "carousel.css?4bde0404c4ab76284f85"
+        "carousel.css?3698ddbb0ef1ba3c80c0"
       ],
       "js": [
-        "carousel.js?9924c19d0a7004313bc3"
+        "carousel.js?d047648c44df9c7101dc"
+      ]
+    },
+    "features": {
+      "css": [
+        "features.css?0e4338761429b4eb16ac"
+      ],
+      "js": [
+        "features.js?6c72c390193da746eb4f"
       ]
     }
-  }
+  },
+  "features.css": "features.css?0e4338761429b4eb16ac",
+  "features.js": "features.js?6c72c390193da746eb4f"
 }

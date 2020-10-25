@@ -1,0 +1,34 @@
+@import '_variable.scss';
+
+._vertical_accordion {
+  max-width: $accordion_max_width;
+  margin: auto;
+
+  .accordion {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+
+      border: 1px solid #4e4e4e;
+      border-collapse: collapse;
+
+      .accordion_tittle {
+        padding: 8px;
+        border: 1px solid #4e4e4e;
+        margin: 0;
+        background-color: #a7a7a7;
+      }
+
+      .accordion_content {
+        display: none;
+        background-color: white;
+
+      }
+      input:checked+.accordion_content {
+        display: block;
+      }
+
+  }
+}
+

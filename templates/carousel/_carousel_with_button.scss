@@ -1,5 +1,7 @@
+@import '_variable.scss';
+
 ._carousel_with_button {
-  max-width: 540px;
+  max-width: $carousel_max_width;
   margin: auto;
 
   .carousel-box {
@@ -9,7 +11,7 @@
       .slide {
         display: none;
 
-        height: 240px;
+        height: $carousel_slide_height;
         width: 100%;
 
         img {
@@ -28,6 +30,7 @@
         top: 50%;
 
         background: #373fff;
+        color: white;
         border: 3px solid white;
         border-radius: 16px;
 

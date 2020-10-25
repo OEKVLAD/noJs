@@ -35,6 +35,21 @@ export class router {
                 this.viewsPath = "carousel/"+controller.indexAction.view;
                 this.data = controller.indexAction.data;
                 break;
+            case "accordion":
+                controller = se.accordionController;
+                this.viewsPath = "accordion/"+controller.indexAction.view;
+                this.data = controller.indexAction.data;
+                break;
+            case "features":
+                controller = se.featuresController;
+                this.viewsPath = "features/"+controller.indexAction.view;
+                this.data = controller.indexAction.data;
+                break;
+            case "contact":
+                controller = se.contactController;
+                this.viewsPath = "contact/"+controller.indexAction.view;
+                this.data = controller.indexAction.data;
+                break;
             default:
                 controller = se.errorController;
                 this.viewsPath = controller.error404Action.view;
